@@ -164,4 +164,19 @@ html {
 	.navbar-toggler-check:checked + .navbar-menu {
 		top: 64px;
 	}
+	.hero {
+		flex-wrap: wrap;
+	}
+	.hero .branding-socials ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		margin-left: 6rem;
+	}
+	.hero .branding-text {
+		margin-left: 2rem;
+		width: 100%;
+	}
 }
