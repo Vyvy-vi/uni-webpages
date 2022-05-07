@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+#tracker {
+	background-color: #131313;
+	padding: 5rem 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	padding: 0.5rem;
+	max-width: 900px;
+	gap: 1rem;
+}
+
+.blob {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding: 1em;
+	background: #159957;
+	max-width: 900px;
+	color: #131313;
+}
+
+#balance input {
+	font-size: 3rem;
+}
+
+input,
+select {
+	/* width: 10em; */
+	margin-bottom: 0.5em;
+	border-radius: 4px;
+	padding: 0.5em;
+	border: none;
+	width: 100%;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+h4 {
+	margin-bottom: 0.5em;
+}
+
+button {
+	padding: 0.8em;
+	max-width: 12em;
+	font-family: "Roboto", sans-serif;
+	background: #283c86;
+	color: #f8f4e3;
+	font-weight: 500;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	align-self: center;
+	margin-top: 1em;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+#txns {
+	background-color: #131313;
+	padding: 5rem 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+#transactions-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding: 0.5rem;
+	margin-bottom: 1em;
+	background: #159957;
+	max-width: 900px;
+}
+
+.eachTransaction {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	margin: 0.5em 0;
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		flex-wrap: wrap;
+	}
+} ;

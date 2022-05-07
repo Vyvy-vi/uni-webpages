@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/app-sections.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" id="navbar-logo">FinTrack</a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="./index.html#home" class="navbar-links" id="main-home-page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tracker" class="navbar-links" id="about-page">Tracker</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#txns" class="navbar-links" id="team-page">Transactions</a>
+                    </li>
+                    <li class="navbar-btn">
+                        <a href="./index.html" class="navbar-buttons">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="tracker">
+            <h2>Expense Tracker</h2>
+            <p>You could log your transactions here.</p><br>
+            <!-- /* container for current balance */ -->
+            <div class="container">
+                <div class="blob" id="balance">
+                    <h2>Current Balance</h2>
+                    <label for="currentBalance"></label>
+                    <input id='currentBalance' type="number" readonly>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Add funds -->
+                <div class="blob">
+                    <h2>Add Funds</h2>
+                    <input id="addFundsField" type="text"><button id="addFunds">Add Funds</button>
+                </div>
+                <!-- //container for New Transaction or expense -->
+                <div class="blob" id="inputForm">
+                    <h2>Enter a new expense</h2>
+                    <!-- //name of expense -->
+                    <h4>Expense</h4><label for="newExpense" name='Expense'></label><input id='newExpense' type="text"
+                        placeholder="What is the name of this expense?" required>
+                    <!-- // currency amount -->
+                    <h4>Cost</h4><label for="cost"></label><input id='cost' type="number" name='cost'
+                        placeholder='How much?' required>
+                    <!-- //Type of expense  -->
+                    <h4>Type</h4><label for="type"></label>
+                    <select id="type" placeholder='Rent'>
+                        <option value="">-Choose the type of expense-</option>
+                        <option value="Home">Home</option>
+                        <option value="Food & Dining">Food & Dining</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Pets">Pets</option>
+                    </select>
+                    <button id='submitNewExpense'>Populate new expense</button>
+                </div>
+            </div>
+        </section>
+        <section id="txns">
+            <h2>Transactions</h2>
+            <p>These are all the transactions you have made so far.</p><br>
+            <!-- //container for displaying new expenses -->
+            <div id="transactions-container">
+                <h2>Transactions</h2>
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>About Us</h2>
+                    <a href="/sign-up">How it works</a> <a href="/">Testimonials</a>
+                    <a href="/">Careers</a> <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a> <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a> <a href="/">Facebook</a>
+                    <a href="/">Youtube</a> <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a href="/" id="footer-logo">FinTrack</a>
+                </div>
+                <p class="website-rights">&copy; Vyom Jain 2022.&nbsp;All rights reserved</p>
+                <div class="social-icons">
+                    <a href="/" class="social-icon-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./scripts/nav.js" type="text/javascript"></script>
+    <script src="./scripts/txns.js" type="text/javascript"></script>
+    <noscript>You need to enable JS to use this website.</noscript>
+</body>
+
+</html>

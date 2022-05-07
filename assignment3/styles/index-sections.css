@@ -1,0 +1,413 @@
+/* Hero Section */
+
+.hero {
+	background: #000000;
+	background: linear-gradient(to right, #161616, #000000);
+	padding: 200px 0;
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 90%;
+	text-align: center;
+	padding: 30px;
+}
+
+.hero-heading {
+	font-size: 100px;
+	margin-bottom: 24px;
+	color: #fff;
+}
+
+.hero-heading span {
+	background: #99f2c8; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#1f4037,
+		#99f2c8
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-mo-text-fill-color: transparent;
+}
+
+.hero-description {
+	font-size: 60px;
+	background: #005c97; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #363795, #005c97); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#363795,
+		#005c97
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-heading {
+		font-size: 60px;
+	}
+
+	.hero-description {
+		font-size: 40px;
+	}
+}
+
+/* About Section */
+.main {
+	background-color: #131313;
+	padding: 10rem 0;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	height: 90%;
+	z-index: 1;
+	width: 100%;
+	max-width: 1300px;
+	padding: 0 50px;
+}
+
+.main-content {
+	color: #fff;
+	width: 100%;
+}
+
+.main-content h2 {
+	font-size: 2rem;
+	background-color: #159957;
+	background-image: linear-gradient(to top, #1f4037 0%, #159957 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+
+.main-content h3 {
+	font-size: 4rem;
+	background: #005c97; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #363795, #005c97); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#363795,
+		#005c97
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.main-content p {
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.main-btn {
+	font-size: 1.8rem;
+	background: #99f2c8;
+	background: -webkit-linear-gradient(to right, #99f2c8, #1f4037, #283c86);
+	background: linear-gradient(to right, #99f2c8, #1f4037, #283c86);
+	padding: 20px 60px;
+	border: none;
+	border-radius: 4px;
+	margin-top: 2rem;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.35s ease-in;
+	outline: none;
+}
+
+.main-btn a {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-btn:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #159957;
+	transition: all 0.35s ease-out;
+	border-radius: 4px;
+}
+
+.main-btn:hover {
+	color: #fff;
+}
+
+.main-btn:hover:after {
+	width: 100%;
+}
+
+.main-img-container {
+	text-align: center;
+}
+
+.main-img-card {
+	margin: 10px;
+	height: 500px;
+	width: 500px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	background: #159957; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #30e8bf, #283c86); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#30e8bf,
+		#283c86
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-img-card img {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	align-self: center;
+}
+
+.fa-layer-group,
+.fa-users {
+	font-size: 14rem;
+}
+
+#card-2 {
+	background: #00467f; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a5cc82, #00467f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#a5cc82,
+		#00467f
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+	.main-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto;
+		height: 90%;
+	}
+
+	.main-img-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-img-card {
+		height: 425px;
+		width: 425px;
+	}
+
+	.main-content {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.main-content h2 {
+		font-size: 2.5rem;
+		margin-top: 2rem;
+	}
+
+	.main-content h3 {
+		font-size: 3rem;
+	}
+
+	.main-content p {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-img-card {
+		width: 250px;
+		height: 250px;
+	}
+
+	.fa-users,
+	.fa-layer-group {
+		font-size: 4rem;
+	}
+
+	.main-content h2 {
+		font-size: 2rem;
+		margin-top: 3rem;
+	}
+	.main-content h3 {
+		font-size: 2rem;
+	}
+
+	.main-content p {
+		margin-top: 2rem;
+	}
+
+	.main-btn {
+		padding: 12px 36px;
+		margin: 2.5rem 0;
+	}
+}
+
+/* team Section */
+.team {
+	background: #131313;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 10rem 0;
+}
+
+.team h2 {
+	background-color: #159957;
+	background-image: linear-gradient(to top, #1f4037 0%, #159957 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	margin-bottom: 5rem;
+	font-size: 2.5rem;
+}
+
+.team-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.team-card {
+	margin: 10px;
+	height: 425px;
+	width: 300px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+	transition: 0.3s ease-in;
+}
+
+.team-card:nth-child(2) {
+	background: #1fa2ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#a6ffcb,
+		#12d8fa,
+		#1fa2ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#a6ffcb,
+		#12d8fa,
+		#1fa2ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.team-card:nth-child(3) {
+	background: #8f00fe; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0b8793, #8f00fe); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0b8793,
+		#8f00fe
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.team-card h3 {
+	text-align: center;
+}
+
+.team-card p {
+	text-align: center;
+	margin-top: 24px;
+	font-size: 20px;
+}
+
+.avatar {
+	object-fit: cover;
+	width: 20vh;
+	margin: 2rem 2rem;
+	padding: 0;
+	align-self: center;
+	clip-path: circle();
+	transition: transform 1s ease-in-out;
+}
+
+.avatar:hover {
+	transform: skew(1deg) rotate(360deg);
+	transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.team-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+
+.team-card button {
+	color: #fff;
+	padding: 14px 24px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background: #131313;
+	font-size: 1rem;
+}
+
+.team-card button:hover {
+	cursor: pointer;
+}
+
+.team-card:hover {
+	transform: scale(1.075);
+	transition: 0.3s ease-in;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+	.team-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.team-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
